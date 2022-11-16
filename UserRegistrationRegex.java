@@ -49,22 +49,22 @@ public class UserRegistrationRegex {
     }
 
     // Ability to add password
-    // Rule 2 should have at least 1 upper case
+    // Rule 2 should have at least 1 numeric value
 
     public static void password() {
         Scanner sc  = new Scanner(System.in);
         System.out.println("\nEnter the Password");
         String p = sc.nextLine();
-        if (Pattern.matches("^[A-Za-z0-9]{8,}$", p) == true) //should have 1 upper case
+        if (Pattern.matches("^[A-Za-z0-9]{8,}$", p) == true) //should have 1 numeric value
             System.out.println("Valid Password");
         else
             System.out.println("Invalid Password");
     }
     public static void main(String[] args) {
-//        firstName();
-//        lastName();
-//        email();
-//        mobile();
+        firstName();
+        lastName();
+        email();
+        mobile();
         password();
     }
 }
