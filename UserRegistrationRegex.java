@@ -1,5 +1,7 @@
 package com.bridgelabz.regex_user_registration;
 
+// Ability to add first and checking if it is valid or not
+
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -15,7 +17,9 @@ public class UserRegistrationRegex {
             System.out.println("Invalid First Name");
     }
 
+
     public static void main(String[] args) {
         firstName();
+
     }
 }
