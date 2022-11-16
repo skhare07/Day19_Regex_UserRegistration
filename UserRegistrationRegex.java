@@ -17,6 +17,7 @@ public class UserRegistrationRegex {
             System.out.println("Invalid First Name");
     }
 
+    //ability to add email and checking if it is valid
     public static void lastName() {
         Scanner sc = new Scanner(System.in);
         System.out.println("\nEnter Last Name");
@@ -27,9 +28,19 @@ public class UserRegistrationRegex {
             System.out.println("Invalid Last Name");
     }
 
+    public static void email() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter Email");
+        String email = sc.nextLine();
+        if (Pattern.matches("^[a-z]{1,}[._+-]?[a-z]{1,}?[\\@][a-z]{1,}[\\.][a-z]{1,}[\\.][a-z]{1,}$",email) == true)
+            System.out.println("Valid Email");
+        else
+            System.out.println("Invalid Email");
+    }
 
     public static void main(String[] args) {
         firstName();
         lastName();
+        email();
     }
 }
