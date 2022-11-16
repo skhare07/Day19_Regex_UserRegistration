@@ -49,13 +49,13 @@ public class UserRegistrationRegex {
     }
 
     // Ability to add password
-    // Rule 1 minimum 8 Characters
+    // Rule 2 should have at least 1 upper case
 
     public static void password() {
         Scanner sc  = new Scanner(System.in);
         System.out.println("\nEnter the Password");
         String p = sc.nextLine();
-        if (Pattern.matches("^[A-Za-z0-9]{8,}$", p) == true)
+        if (Pattern.matches("^[A-Za-z0-9]{8,}$", p) == true) //should have 1 upper case
             System.out.println("Valid Password");
         else
             System.out.println("Invalid Password");
